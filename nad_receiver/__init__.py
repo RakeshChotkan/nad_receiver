@@ -66,6 +66,10 @@ class NADReceiver:
     def main_power(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Power."""
         return self.exec_command('main', 'power', operator, value)
+      
+    def main_subwoofer(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Subwoofer."""
+        return self.exec_command('main', 'subwoofer', operator, value)
 
     def main_volume(self, operator: str, value: Optional[str] =None) -> Optional[float]:
         """
