@@ -25,6 +25,10 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Volume',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'subwoofer':
+                {'cmd': 'Main.Speaker.Sub',
+                 'supported_operators': ['=', '?']
+                 },
             'ir':
                 {'cmd': 'Main.IR',
                  'supported_operators': ['=']
