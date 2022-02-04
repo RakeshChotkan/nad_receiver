@@ -21,13 +21,29 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Power',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'subwoofer':
+                {'cmd': 'Main.Speaker.Sub',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'enhanced_bass':
+                {'cmd': 'Main.EnhancedBass',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'speaker_front_config':
+                {'cmd': 'Main.Speaker.Front.Config',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'cec_arc':
+                {'cmd': 'Main.CEC.Arc',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'cec_audio':
+                {'cmd': 'Main.CEC.Audio',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
             'volume':
                 {'cmd': 'Main.Volume',
                  'supported_operators': ['+', '-', '=', '?']
-                 },
-            'subwoofer':
-                {'cmd': 'Main.Speaker.Sub',
-                 'supported_operators': ['=', '?']
                  },
             'ir':
                 {'cmd': 'Main.IR',
@@ -35,7 +51,7 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                  },
             'listeningmode':
                 {'cmd': 'Main.ListeningMode',
-                 'supported_operators': ['+', '-']
+                 'supported_operators': ['+', '-', '=', '?']
                  },
             'sleep':
                 {'cmd': 'Main.Sleep',
