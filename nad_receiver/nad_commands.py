@@ -33,6 +33,26 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Speaker.Front.Config',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'speaker_center_config':
+                {'cmd': 'Main.Speaker.Center.Config',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'speaker_surround_config':
+                {'cmd': 'Main.Speaker.Surround.Config',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'speaker_front_frequency':
+                {'cmd': 'Main.Speaker.Front.Frequency',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'speaker_center_frequency':
+                {'cmd': 'Main.Speaker.Center.Frequency',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'speaker_surround_frequency':
+                {'cmd': 'Main.Speaker.Surround.Frequency',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
             'cec_arc':
                 {'cmd': 'Main.CEC.Arc',
                  'supported_operators': ['+', '-', '=', '?']
