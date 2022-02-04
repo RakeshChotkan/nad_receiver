@@ -66,10 +66,26 @@ class NADReceiver:
     def main_power(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Power."""
         return self.exec_command('main', 'power', operator, value)
-      
+        
     def main_subwoofer(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Subwoofer."""
         return self.exec_command('main', 'subwoofer', operator, value)
+
+    def main_enhanced_bass(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.EnhancedBass."""
+        return self.exec_command('main', 'enhanced_bass', operator, value)
+
+    def main_speaker_front_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Front.Config."""
+        return self.exec_command('main', 'speaker_front_config', operator, value)
+
+    def main_cec_arc(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.CEC.Arc."""
+        return self.exec_command('main', 'cec_arc', operator, value)
+
+    def main_cec_audio(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.CEC.Audio."""
+        return self.exec_command('main', 'cec_audio', operator, value)
 
     def main_volume(self, operator: str, value: Optional[str] =None) -> Optional[float]:
         """
