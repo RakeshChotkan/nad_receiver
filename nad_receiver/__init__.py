@@ -79,6 +79,26 @@ class NADReceiver:
         """Execute Main.Speaker.Front.Config."""
         return self.exec_command('main', 'speaker_front_config', operator, value)
 
+    def main_speaker_center_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Center.Config."""
+        return self.exec_command('main', 'speaker_center_config', operator, value)
+
+    def main_speaker_surround_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Center.Config."""
+        return self.exec_command('main', 'speaker_surround_config', operator, value)
+
+    def main_speaker_front_frequency(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Front.Frequency."""
+        return self.exec_command('main', 'speaker_front_frequency', operator, value)
+
+    def main_speaker_center_frequency(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Center.Frequency."""
+        return self.exec_command('main', 'speaker_center_frequency', operator, value)
+
+    def main_speaker_surround_frequency(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Speaker.Center.Frequency."""
+        return self.exec_command('main', 'speaker_surround_frequency', operator, value)
+
     def main_cec_arc(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.CEC.Arc."""
         return self.exec_command('main', 'cec_arc', operator, value)
