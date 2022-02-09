@@ -17,6 +17,7 @@ receiver = NADReceiver(serial_port)  # e.g. /dev/ttyUSB0
 receiver.main_volume('+')  #  will increase volume with 1 and return new value
 receiver.main_volume('-')  #  will decrease volume with 1 and return new value
 receiver.main_volume('=', '-40')  # specify dB, will return new value
+receiver.main_subwoofer('?') # will return current value
 print(receiver.main_volume('?'))  # will return current value
 
 D7050 = NADReceiverTCP(host_ip)  # The IP address of your amplifier in the network.
