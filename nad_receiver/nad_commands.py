@@ -29,6 +29,10 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.LCD.FrontView.Other',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'main_lcd_brightness':
+                {'cmd': 'Main.Brightness',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
             'mute':
                 {'cmd': 'Main.Mute',
                  'supported_operators': ['+', '-', '=', '?']
