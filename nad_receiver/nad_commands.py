@@ -13,6 +13,10 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Dimmer',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'info':
+                {'cmd': '',
+                 'supported_operators': ['?']
+                 },
             'mute':
                 {'cmd': 'Main.Mute',
                  'supported_operators': ['+', '-', '=', '?']

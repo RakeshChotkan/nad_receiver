@@ -15,12 +15,10 @@ from nad_receiver.nad_transport import (NadTransport, SerialPortTransport, Telne
 
 import logging
 
-
 logging.basicConfig()
 _LOGGER = logging.getLogger("nad_receiver")
 # Uncomment this line to see all communication with the device:
 # _LOGGER.setLevel(logging.DEBUG)
-
 
 class NADReceiver:
     """NAD receiver."""
@@ -58,6 +56,10 @@ class NADReceiver:
     def main_dimmer(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Dimmer."""
         return self.exec_command('main', 'dimmer', operator, value)
+    
+    def main_info(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute info."""
+        return self.exec_command('main', 'info', operator, value)
 
     def main_mute(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Mute."""
