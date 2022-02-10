@@ -73,6 +73,10 @@ class NADReceiver:
         """Execute Main.LCD.FrontView.Other."""
         return self.exec_command('main', 'lcd_frontview_other', operator, value)
 
+    def main_lcd_brightness(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Brightness."""
+        return self.exec_command('main', 'lcd_brightness', operator, value)
+
     def main_trim_center(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Trim.Center."""
         return self.exec_command('main', 'trim_center', operator, value)
