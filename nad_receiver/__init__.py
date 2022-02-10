@@ -165,10 +165,6 @@ class NADReceiver:
         """Execute Main.Sleep."""
         return self.exec_command('main', 'sleep', operator, value)
 
-    def main_source(self, operator: str, value: Optional[str] =None) -> Optional[str]:
-        """Execute Main.Source."""
-        return self.exec_command('main', 'source', operator, value)
-
     def main_auto_standby(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.AutoStandby."""
         return self.exec_command('main', 'auto_standby', operator, value)
@@ -241,10 +237,6 @@ class NADReceiver:
     def main_listeningmode(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.ListeningMode."""
         return self.exec_command('main', 'listeningmode', operator, value)
-
-    def main_sleep(self, operator: str, value: Optional[str] =None) -> Optional[str]:
-        """Execute Main.Sleep."""
-        return self.exec_command('main', 'sleep', operator, value)
 
     def main_tape_monitor(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Tape1."""
