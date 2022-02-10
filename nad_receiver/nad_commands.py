@@ -169,14 +169,6 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.ListeningMode',
                  'supported_operators': ['+', '-', '=', '?']
                  },
-            'sleep':
-                {'cmd': 'Main.Sleep',
-                 'supported_operators': ['+', '-']
-                 },
-            'source':
-                {'cmd': 'Main.Source',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
             'version':
                 {'cmd': 'Main.Version',
                  'supported_operators': ['?']
