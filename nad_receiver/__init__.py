@@ -57,9 +57,101 @@ class NADReceiver:
         """Execute Main.Dimmer."""
         return self.exec_command('main', 'dimmer', operator, value)
     
-    def main_info(self, operator: str, value: Optional[str] =None) -> Optional[str]:
-        """Execute info."""
-        return self.exec_command('main', 'info', operator, value)
+    def main_lcd_darkmode(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.LCD.DarkMode."""
+        return self.exec_command('main', 'lcd_darkmode', operator, value)
+
+    def main_lcd_display(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.LCD.Display."""
+        return self.exec_command('main', 'lcd_display', operator, value)
+
+    def main_lcd_frontview_bluos(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.LCD.FrontView.BluOS."""
+        return self.exec_command('main', 'lcd_frontview_bluos', operator, value)
+
+    def main_lcd_frontview_other(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.LCD.FrontView.Other."""
+        return self.exec_command('main', 'lcd_frontview_other', operator, value)
+
+    def main_trim_center(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Trim.Center."""
+        return self.exec_command('main', 'trim_center', operator, value)
+
+    def main_trim_sub(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Trim.Sub."""
+        return self.exec_command('main', 'trim_sub', operator, value)
+
+    def main_trim_surround(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Trim.Surround."""
+        return self.exec_command('main', 'trim_surround', operator, value)
+
+    def main_video_resolution(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Video.Resolution."""
+        return self.exec_command('main', 'video_resolution', operator, value)
+
+    def main_video_hdr(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Video.HDR."""
+        return self.exec_command('main', 'video_hdr', operator, value)
+
+    def main_video_color(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Video.Color."""
+        return self.exec_command('main', 'video_color', operator, value)
+
+    def main_video_bits(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Video.Bits."""
+        return self.exec_command('main', 'video_bits', operator, value)
+
+    def main_video_videomode(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.VideoMode."""
+        return self.exec_command('main', 'video_videomode', operator, value)
+
+    def main_audio_codec(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Audio.Codec."""
+        return self.exec_command('main', 'audio_codec', operator, value)
+
+    def main_audio_channels(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Audio.Channels."""
+        return self.exec_command('main', 'audio_channels', operator, value)
+
+    def main_audio_rate(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Audio.Rate."""
+        return self.exec_command('main', 'audio_rate', operator, value)
+
+    def main_temp_back(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.Back."""
+        return self.exec_command('main', 'temp_back', operator, value)
+
+    def main_temp_center(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.Center."""
+        return self.exec_command('main', 'temp_center', operator, value)
+
+    def main_temp_front(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.Front."""
+        return self.exec_command('main', 'temp_front', operator, value)
+
+    def main_temp_height(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.Height."""
+        return self.exec_command('main', 'temp_height', operator, value)
+
+    def main_temp_psu(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.PSU."""
+        return self.exec_command('main', 'temp_psu', operator, value)
+
+    def main_temp_surround(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Temp.Surround."""
+        return self.exec_command('main', 'temp_surround', operator, value)
+
+    def main_fan_actual(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Internal.Fan.Actual."""
+        return self.exec_command('main', 'fan_actual', operator, value)
+
+    def main_fan_requested(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Internal.Fan.Requested."""
+        return self.exec_command('main', 'fan_requested', operator, value)
+
+    def main_fan_status(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Internal.Fan.Status."""
+        return self.exec_command('main', 'fan_status', operator, value)
 
     def main_mute(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Mute."""
@@ -68,6 +160,18 @@ class NADReceiver:
     def main_power(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Power."""
         return self.exec_command('main', 'power', operator, value)
+
+    def main_sleep(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Sleep."""
+        return self.exec_command('main', 'sleep', operator, value)
+
+    def main_source(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.Source."""
+        return self.exec_command('main', 'source', operator, value)
+
+    def main_auto_standby(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.AutoStandby."""
+        return self.exec_command('main', 'auto_standby', operator, value)
         
     def main_subwoofer(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Subwoofer."""
