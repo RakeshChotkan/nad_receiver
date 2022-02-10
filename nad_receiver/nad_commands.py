@@ -13,9 +13,21 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Dimmer',
                  'supported_operators': ['+', '-', '=', '?']
                  },
-            'info':
-                {'cmd': '',
-                 'supported_operators': ['?']
+            'lcd_darkmode':
+                {'cmd': 'Main.LCD.DarkMode',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'lcd_display':
+                {'cmd': 'Main.LCD.Display',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'lcd_frontview_bluos':
+                {'cmd': 'Main.LCD.FrontView.BluOS',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'lcd_frontview_other':
+                {'cmd': 'Main.LCD.FrontView.Other',
+                 'supported_operators': ['+', '-', '=', '?']
                  },
             'mute':
                 {'cmd': 'Main.Mute',
@@ -32,6 +44,86 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
             'enhanced_bass':
                 {'cmd': 'Main.EnhancedBass',
                  'supported_operators': ['+', '-', '=', '?']
+                 },
+            'trim_center':
+                {'cmd': 'Main.Trim.Center',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'trim_sub':
+                {'cmd': 'Main.Trim.Sub',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'trim_surround':
+                {'cmd': 'Main.Trim.Surround',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'video_resolution':
+                {'cmd': 'Main.Video.Resolution',
+                 'supported_operators': ['?']
+                 },
+            'video_hdr':
+                {'cmd': 'Main.Video.HDR',
+                 'supported_operators': ['?']
+                 },
+            'video_color':
+                {'cmd': 'Main.Video.Color',
+                 'supported_operators': ['?']
+                 },
+            'video_bits':
+                {'cmd': 'Main.Video.Bits',
+                 'supported_operators': ['?']
+                 },
+            'video_videomode':
+                {'cmd': 'Main.VideoMode',
+                 'supported_operators': ['?']
+                 },
+            'audio_codec':
+                {'cmd': 'Main.Audio.Codec',
+                 'supported_operators': ['?']
+                 },
+            'audio_channels':
+                {'cmd': 'Main.Audio.Channels',
+                 'supported_operators': ['?']
+                 },
+            'audio_rate':
+                {'cmd': 'Main.Audio.Rate',
+                 'supported_operators': ['?']
+                 },
+            'temp_back':
+                {'cmd': 'Main.Temp.Back',
+                 'supported_operators': ['?']
+                 },
+            'temp_center':
+                {'cmd': 'Main.Temp.Center',
+                 'supported_operators': ['?']
+                 },
+            'temp_front':
+                {'cmd': 'Main.Temp.Front',
+                 'supported_operators': ['?']
+                 },
+            'temp_height':
+                {'cmd': 'Main.Temp.Height',
+                 'supported_operators': ['?']
+                 },
+            'temp_psu':
+                {'cmd': 'Main.Temp.PSU',
+                 'supported_operators': ['?']
+                 },
+            'temp_surround':
+                {'cmd': 'Main.Temp.Surround',
+                 'supported_operators': ['?']
+                 },
+            'fan_actual':
+                {'cmd': 'Internal.Fan.Actual',
+                 'supported_operators': ['?']
+                 },
+            'fan_requested':
+                {'cmd': 'Internal.Fan.Requested',
+                 'supported_operators': ['?']
+                 },
+            'fan_status':
+                {'cmd': 'Internal.Fan.Status',
+                 'supported_operators': ['?']
                  },
             'speaker_front_config':
                 {'cmd': 'Main.Speaker.Front.Config',
@@ -91,15 +183,27 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                  },
             'speaker_a':
                 {'cmd': 'Main.SpeakerA',
-                 'supported_operators': ['+', '-', '=', '?'],
+                 'supported_operators': ['+', '-', '=', '?']
                  },
             'speaker_b':
                 {'cmd': 'Main.SpeakerB',
-                 'supported_operators': ['+', '-', '=', '?'],
+                 'supported_operators': ['+', '-', '=', '?']
                  },
             'tape_monitor':
                 {'cmd': 'Main.Tape1',
-                 'supported_operators': ['+', '-', '=', '?'],
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'auto_standby':
+                {'cmd': 'Main.AutoStandby',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'sleep':
+                {'cmd': 'Main.Sleep',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'source':
+                {'cmd': 'Main.Source',
+                 'supported_operators': ['+', '-', '=', '?']
                  },
             'model':
                 {'cmd': 'Main.Model',
