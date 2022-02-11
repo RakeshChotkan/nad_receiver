@@ -190,7 +190,7 @@ class NADReceiver:
         return self.exec_command('main', 'speaker_center_config', operator, value)
 
     def main_speaker_surround_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
-        """Execute Main.Speaker.Center.Config."""
+        """Execute Main.Speaker.Surround.Config."""
         return self.exec_command('main', 'speaker_surround_config', operator, value)
 
     def main_speaker_front_frequency(self, operator: str, value: Optional[str] =None) -> Optional[str]:
