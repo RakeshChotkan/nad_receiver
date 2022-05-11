@@ -161,6 +161,14 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.CEC.Audio',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'cec_power':
+                {'cmd': 'Main.CEC.Power',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'cec_switch':
+                {'cmd': 'Main.CEC.Switch',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
             'volume':
                 {'cmd': 'Main.Volume',
                  'supported_operators': ['+', '-', '=', '?']
