@@ -212,6 +212,14 @@ class NADReceiver:
     def main_cec_audio(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.CEC.Audio."""
         return self.exec_command('main', 'cec_audio', operator, value)
+      
+    def main_cec_audio(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.CEC.Power."""
+        return self.exec_command('main', 'cec_power', operator, value)
+      
+    def main_cec_audio(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+        """Execute Main.CEC.Switch."""
+        return self.exec_command('main', 'cec_switch', operator, value)
 
     def main_volume(self, operator: str, value: Optional[str] =None) -> Optional[float]:
         """
