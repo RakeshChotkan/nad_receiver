@@ -165,7 +165,7 @@ class NADReceiver:
         """Execute Main.Speaker.Front.Config."""
         return self.exec_command('main', 'speaker_front_config', operator, value)
 
-     def main_speaker_center_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+    def main_speaker_center_config(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Speaker.Center.Config."""
         return self.exec_command('main', 'speaker_center_config', operator, value)
 
@@ -226,11 +226,11 @@ class NADReceiver:
         """Execute Main.ListeningMode."""
         return self.exec_command('main', 'listeningmode', operator, value)
       
-   def main_version(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+    def main_version(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.Version."""
         return self.exec_command('main', 'version', operator, value)
       
-   def main_auto_standby(self, operator: str, value: Optional[str] =None) -> Optional[str]:
+    def main_auto_standby(self, operator: str, value: Optional[str] =None) -> Optional[str]:
         """Execute Main.AutoStandby."""
         return self.exec_command('main', 'auto_standby', operator, value)
     
