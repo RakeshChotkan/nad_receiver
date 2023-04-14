@@ -57,6 +57,30 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Trim.Surround',
                  'supported_operators': ['+', '-', '=', '?']
                  },
+            'level_center':
+                {'cmd': 'Main.Level.Center',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'level_left':
+                {'cmd': 'Main.Level.Left',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'level_right':
+                {'cmd': 'Main.Level.Right',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'level_sub':
+                {'cmd': 'Main.Level.Sub',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'level_surround_left':
+                {'cmd': 'Main.Level.SurroundLeft',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
+            'level_surround_right':
+                {'cmd': 'Main.Level.SurroundRight',
+                 'supported_operators': ['+', '-', '=', '?']
+                 },
             'temp_back':
                 {'cmd': 'Main.Temp.Back',
                  'supported_operators': ['?']
