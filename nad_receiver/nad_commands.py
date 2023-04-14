@@ -9,10 +9,6 @@ from typing import Dict, Iterable, Union
 CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
     'main':
         {
-            'dimmer':
-                {'cmd': 'Main.Dimmer',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
             'lcd_darkmode':
                 {'cmd': 'Main.LCD.DarkMode',
                  'supported_operators': ['+', '-', '=', '?']
@@ -60,38 +56,6 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
             'trim_surround':
                 {'cmd': 'Main.Trim.Surround',
                  'supported_operators': ['+', '-', '=', '?']
-                 },
-            'video_resolution':
-                {'cmd': 'Main.Video.Resolution',
-                 'supported_operators': ['?']
-                 },
-            'video_hdr':
-                {'cmd': 'Main.Video.HDR',
-                 'supported_operators': ['?']
-                 },
-            'video_color':
-                {'cmd': 'Main.Video.Color',
-                 'supported_operators': ['?']
-                 },
-            'video_bits':
-                {'cmd': 'Main.Video.Bits',
-                 'supported_operators': ['?']
-                 },
-            'video_videomode':
-                {'cmd': 'Main.VideoMode',
-                 'supported_operators': ['?']
-                 },
-            'audio_codec':
-                {'cmd': 'Main.Audio.Codec',
-                 'supported_operators': ['?']
-                 },
-            'audio_channels':
-                {'cmd': 'Main.Audio.Channels',
-                 'supported_operators': ['?']
-                 },
-            'audio_rate':
-                {'cmd': 'Main.Audio.Rate',
-                 'supported_operators': ['?']
                  },
             'temp_back':
                 {'cmd': 'Main.Temp.Back',
@@ -154,7 +118,7 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                  'supported_operators': ['+', '-', '=', '?']
                  },
             'cec_arc':
-                {'cmd': 'Main.CEC.Arc',
+                {'cmd': 'Main.CEC.ARC',
                  'supported_operators': ['+', '-', '=', '?']
                  },
             'cec_audio':
@@ -173,10 +137,6 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                 {'cmd': 'Main.Volume',
                  'supported_operators': ['+', '-', '=', '?']
                  },
-            'ir':
-                {'cmd': 'Main.IR',
-                 'supported_operators': ['=']
-                 },
             'listeningmode':
                 {'cmd': 'Main.ListeningMode',
                  'supported_operators': ['+', '-', '=', '?']
@@ -184,18 +144,6 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
             'version':
                 {'cmd': 'Main.Version',
                  'supported_operators': ['?']
-                 },
-            'speaker_a':
-                {'cmd': 'Main.SpeakerA',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
-            'speaker_b':
-                {'cmd': 'Main.SpeakerB',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
-            'tape_monitor':
-                {'cmd': 'Main.Tape1',
-                 'supported_operators': ['+', '-', '=', '?']
                  },
             'auto_standby':
                 {'cmd': 'Main.AutoStandby',
@@ -214,31 +162,4 @@ CMDS: Dict[str, Dict[str, Dict[str, Union[str, Iterable[str]]]]] = {
                  'supported_operators': ['?']
                  },
         },
-    'tuner':
-        {
-            'am_frequency':
-                {'cmd': 'Tuner.AM.Frequency',
-                 'supported_operators': ['+', '-']
-                 },
-            'am_preset':
-                {'cmd': 'Tuner.AM.Preset',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
-            'band':
-                {'cmd': 'Tuner.Band',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
-            'fm_frequency':
-                {'cmd': 'Tuner.FM.Frequency',
-                 'supported_operators': ['+', '-']
-                 },
-            'fm_mute':
-                {'cmd': 'Tuner.FM.Mute',
-                 'supported_operators': ['+', '-', '=', '?']
-                 },
-            'fm_preset':
-                {'cmd': 'Tuner.FM.Preset',
-                 'supported_operators': ['+', '-', '=', '?']
-                 }
-        }
 }
